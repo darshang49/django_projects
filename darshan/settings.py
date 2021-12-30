@@ -80,10 +80,11 @@ WSGI_APPLICATION = 'darshan.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'darshan_django',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
-        'HOST': 'localhost'
+        'NAME': 'postgres',
+        'USER': 'django',
+        'PASSWORD': 'django',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
