@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)$pu1q+#f^to05!f(2w8l&ad3!j6-ypw1al7-dwqnon&g98%ro'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['3.138.107.170']
 
 
 # Application definition
@@ -79,9 +79,8 @@ WSGI_APPLICATION = 'darshan.wsgi.application'
 
 DATABASES = {
     'default': {
-        #'ENGINE': 'django.db.backends.postgresql',
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'gis_test',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'darshan_django',
         'USER': 'postgres',
         'PASSWORD': '12345',
         'HOST': 'localhost'
